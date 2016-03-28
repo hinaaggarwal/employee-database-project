@@ -1,0 +1,65 @@
+
+body {
+     background-color: cadetblue;
+}
+
+.main-body {
+    background-color: #bfd8d9;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.navbar .container-fluid {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+.side-panel {
+    padding: 10px;
+    padding-top: 50px;
+}
+
+.input-label {
+    text-align: right;
+    padding: 7px;
+}
+
+.side-panel .col-sm-12 {
+    padding: 10px;
+    text-align: center;
+}
+
+.side-panel .col-sm-12 button {
+    width: 100px;
+}
+
+.button-row {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.button-row .col-sm-12 button {
+    margin: 10px;
+}
+
+.main-panel {
+    
+    background-color: #eff5f5;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    min-height: 400px; 
+    padding-top: 75px;
+}
+
+.user-input {
+    width: 220px;
+    padding: 2px;
+}
+
+.selected {
+    background-color: #c2c2d6;
+}
+

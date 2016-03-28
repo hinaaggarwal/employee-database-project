@@ -1,0 +1,123 @@
+
+<html lang="en">
+    <head> 
+        <title>Employee Database</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../Bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+        <link href="css/employee-database-version1.css" rel="stylesheet">
+        <script href="../js/bootstrap.min.js"></script>
+        
+        <!--<script type="text/javascript" href="../jquery/jquery-1.11.3.js"></script> -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/employee-database-version1.js"></script>
+        
+      <!--  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+        
+        
+    
+    </head>
+    
+    <body>
+        
+        <!-- Navbar comes here -->
+       <!-- <div>
+            <div class="row">
+                <div class="col-sm-12">Nav bar comes here.</div>
+            </div>
+        </div> -->
+        
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+              <ul class="nav navbar-nav">
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">About Us</a></li>
+              <!--    <li class="dropdown">
+                  <!--    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      
+                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                          
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                      </ul>
+                  </li> -->
+              </ul>
+          </div>
+        </nav>
+        
+        <div class="main-body container-fluid">
+            <div class="row">
+                <div class="col-sm-3 side-panel">
+                    <div class="col-sm-12"><button id="addEmployeeDetails" type="button" class="btn btn-default">Add</button></div>
+                    <div class="col-sm-12"><button id="deleteEmployeeDetails" type="button" class="btn btn-default">Delete</button></div>
+                    <div class="col-sm-12"><button id="editEmployeeDetails" type="button" class="btn btn-default">Edit</button></div>
+                    <div class="col-sm-12"><button id="viewAllEmployeeDetails" type="button" class="btn btn-default">View</button></div>
+                    
+                </div>
+                <div class="col-sm-9 main-panel">
+                    <div class="row">
+                        <div class="col-sm-12 form-section"></div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        
+        <!-- here we have hidden div which will be made visible on the page whenever required -->
+        
+        <div class="hidden" id="addFormTempalte">
+            <div class="row">
+                <div class="col-sm-6 input-label">Employee Name</div>
+                <div class="col-sm-6 user-input"><input id="empName" type="text" class="form-control"/></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6 input-label">Employee DOB</div>
+                <div class="col-sm-6 user-input"><input id="empDOB" type="text" class="form-control" placeholder="DD/MM/YYYY"/></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6 input-label">Contact Number</div>
+                <div class="col-sm-6 user-input"><input id="empContactNumber" type="text" class="form-control"/></div>
+            </div>
+            
+            <div class="row">
+                <div class="col-sm-6 input-label">City</div>
+                <div class="col-sm-6 user-input"><input id="empCity" type="text" class="form-control"/></div>
+            </div>
+            
+            <div class="row button-row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-success search-button" id="addEmployee" onclick="saveDetails();">Add</button>
+                    <button type="button" class="btn btn-info search-button" onclick="resetValues();">Reset</button>
+                </div>
+            </div>  
+        </div>
+        
+        <div class="hidden" id="viewAllEmployees">
+            <table class="table employee-details-table">
+                <thead>
+                    <tr>
+                        <th>Full Name</th>
+                        <th>Date of Birth</th>
+                        <th>Contact Number</th>
+                        <th>City</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr></tr>
+                </tbody>
+            </table>
+        </div>
+        
+    
+    </body>
+    
+</html>
